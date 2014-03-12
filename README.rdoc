@@ -1,6 +1,19 @@
 = Bitcoin-ruby {<img src="https://api.travis-ci.org/lian/bitcoin-ruby.png?branch=master" />}[http://travis-ci.org/lian/bitcoin-ruby]
 
-This is a ruby library for interacting with the bitcoin protocol/network.
+This is a ruby library for interacting with the bitcoin protocol/network along with Dogecoin support.
+
+== Dogecoin
+
+To interact with the Dogecoin protocol or network enter the line.
+
+ Bitcoin.network =:dogecoin
+
+You now use every bitcoin function now for dogecoin.
+Generate a dogecoin key
+
+ key = Bitcoin::generate_key
+ key #=> [<privkey>, <pubkey>]
+
 
 Some of the main features are:
 
